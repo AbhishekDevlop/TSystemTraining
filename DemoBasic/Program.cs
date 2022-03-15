@@ -12,7 +12,7 @@ namespace DemoBasic
         static void Main(string[] args)
         {
             //Department obj = new Department();    
-          
+
             //Department dept = new Department();
 
             //Console.WriteLine(dept.GetData());
@@ -29,11 +29,22 @@ namespace DemoBasic
 
             //Console.WriteLine(stud2.GetData());
 
-            //Employee emp = new Employee(10,"Samar",340000);
-            //emp.CalculateSalary();
-            //Console.WriteLine(emp);
+            Employee emp = new Employee("Samar", 340000);
+            emp.CalculateSalary();
+            Console.WriteLine(emp);
 
-            SalesManager salesMang = new SalesManager(11,"Sarvesh",50000,12000,10000,7800);
+            Employee emp2 = new Employee("Sooraj", 520000);
+            emp2.CalculateSalary();
+            Console.WriteLine(emp2);
+
+            Employee emp3 = new Employee("Sunny", 410000);
+            emp3.CalculateSalary();
+            Console.WriteLine(emp3);
+
+            Console.WriteLine("Total count of emp = "+Employee.GetCount());
+
+
+            SalesManager salesMang = new SalesManager("Sarvesh",50000,12000,10000,7800);
             salesMang.CalculateSalary();
             Console.WriteLine(salesMang);
 

@@ -1,24 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DemoBasic
 {
     public class Employee
     {
+        protected static int count; // to assign emp id  
         protected int id;
         protected string  name;
         protected int basicSalary;
         protected double da, hra, pf,grossSalary;
         public Employee()
         {
-
+            count++;    // increment
+            id = count;
         }
-        public Employee(int id,String name,int salary)
+        public Employee(String name,int salary)
         {
-            this.id = id;
+            count++;
+            this.id = count;
             this.name = name;
             this.basicSalary = salary;
         }
@@ -34,6 +34,11 @@ namespace DemoBasic
         public override string ToString()
         {
             return "Employee id " + id + " Employee name " + name + " Employee grossSalary " + grossSalary;
+        }
+
+        public static int GetCount() 
+        {
+            return count;
         }
 
     }

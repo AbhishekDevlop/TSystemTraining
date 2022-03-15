@@ -13,7 +13,7 @@ namespace DemoBasic
         {
 
         }
-        public SalesManager(int id, String name, int salary, double foodAllow,double comm,double ta):base(id,name,salary)
+        public SalesManager( String name, int salary, double foodAllow,double comm,double ta):base(name,salary)
         {
             this.foodAllow = foodAllow;
             this.ta = ta;
