@@ -36,6 +36,11 @@ namespace DemoBasic
             SalesManager salesMang = new SalesManager(11,"Sarvesh",50000,12000,10000,7800);
             salesMang.CalculateSalary();
             Console.WriteLine(salesMang);
+
+            Calculation cal = new Calculation();
+            Console.WriteLine( cal.Addition(10, 20));
+            Console.WriteLine(cal.Addition(10,40,30));
+            Console.WriteLine(cal.Addition(10, 50.10));
             
             
         }
