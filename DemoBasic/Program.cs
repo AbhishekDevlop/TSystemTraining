@@ -26,7 +26,7 @@ namespace DemoBasic
             Console.WriteLine(stud.GetData());
 
             Student stud2 = new Student(10,"Electrical","Abhishek");
-
+             
             Console.WriteLine(stud2.GetData());
 
         }
