@@ -21,14 +21,23 @@ namespace DemoBasic
             //obj.asigndata();
             //Console.WriteLine(obj.GetData());   
 
-            Student stud = new Student();
+            //Student stud = new Student();
 
-            Console.WriteLine(stud.GetData());
+            //Console.WriteLine(stud.GetData());
 
-            Student stud2 = new Student(10,"Electrical","Abhishek");
+            //Student stud2 = new Student(10,"Electrical","Abhishek");
 
-            Console.WriteLine(stud2.GetData());
+            //Console.WriteLine(stud2.GetData());
 
+            //Employee emp = new Employee(10,"Samar",340000);
+            //emp.CalculateSalary();
+            //Console.WriteLine(emp);
+
+            SalesManager salesMang = new SalesManager(11,"Sarvesh",50000,12000,10000,7800);
+            salesMang.CalculateSalary();
+            Console.WriteLine(salesMang);
+            
+            
         }
     }
 }

@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Department.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesManager.cs" />
     <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
