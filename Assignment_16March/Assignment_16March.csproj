@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CABC166D-E801-42FB-9A91-24D22789E958}</ProjectGuid>
+    <ProjectGuid>{E62976AF-0386-4DD3-B0CA-59B4C7E7D261}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DemoBasic</RootNamespace>
-    <AssemblyName>DemoBasic</AssemblyName>
+    <RootNamespace>Assignment_16March</RootNamespace>
+    <AssemblyName>Assignment_16March</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addition.cs" />
-    <Compile Include="Department.cs" />
-    <Compile Include="Dept.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="MyGeneric.cs" />
-    <Compile Include="MyGenericCls.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="Food.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalesManager.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Student2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
