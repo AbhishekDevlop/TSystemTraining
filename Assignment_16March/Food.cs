@@ -20,5 +20,10 @@ namespace Assignment_16March
             this.price = price;
                 
         }
+
+        public override  string ToString() 
+        {
+            return "Food Name: " + name + "=> Food Price: Rs." + price;
+        }
     }
 }
