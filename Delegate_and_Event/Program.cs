@@ -27,6 +27,7 @@ namespace Delegate_and_Event
             Console.WriteLine("Name  = "+name);
             Console.WriteLine("=================================");
 
+            Console.WriteLine("=========Multicast Delegate======");
             //Multicast Delegate
 
             Calculation cal1 = new Calculation();
@@ -44,12 +45,13 @@ namespace Delegate_and_Event
             Console.WriteLine("========================================");
 
             //Multicaste Delegate
+            
             Test t1 = new Test();
             NameDelegate nameDelegate = new NameDelegate(t1.ToUpperCase);
             nameDelegate += new NameDelegate(t1.ToLowerCase);
 
             Delegate[] names = nameDelegate.GetInvocationList();
-
+            
             foreach(Delegate item in names) 
             {
                 Console.WriteLine(item.Method);
