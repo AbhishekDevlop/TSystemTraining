@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Out_Keyword", "Out_Keyword\Out_Keyword.csproj", "{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{F7FBA669-67CB-4B7C-9556-E58172885F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception_handling", "Exception_handling\Exception_handling.csproj", "{425D5E4A-975B-4AB2-BE0B-7780D69E292C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7FBA669-67CB-4B7C-9556-E58172885F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FBA669-67CB-4B7C-9556-E58172885F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7FBA669-67CB-4B7C-9556-E58172885F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FBA669-67CB-4B7C-9556-E58172885F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425D5E4A-975B-4AB2-BE0B-7780D69E292C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425D5E4A-975B-4AB2-BE0B-7780D69E292C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425D5E4A-975B-4AB2-BE0B-7780D69E292C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425D5E4A-975B-4AB2-BE0B-7780D69E292C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

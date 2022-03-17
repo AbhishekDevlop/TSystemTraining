@@ -18,7 +18,7 @@ namespace Out_Keyword
             op.Calculation(a,b,out add,out mul,out sub);
             Console.WriteLine($"{a} + {b} = {add}");
             Console.WriteLine($"{a} - {b} = {sub}");
-            Console.WriteLine($"{a} * {b} = {mul}") ;
+            Console.WriteLine($"{a} * {b} = {mul}");
         }
     }
 }
