@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_16March", "Assig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{379FC95F-FD41-431E-A4C0-8647B7FDFEED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Out_Keyword", "Out_Keyword\Out_Keyword.csproj", "{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{379FC95F-FD41-431E-A4C0-8647B7FDFEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{379FC95F-FD41-431E-A4C0-8647B7FDFEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{379FC95F-FD41-431E-A4C0-8647B7FDFEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AFA567D-CFDC-4300-A28C-F5B4108BC8DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
