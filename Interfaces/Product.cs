@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal class Product
+    internal class Product:IPrintable
     {
         int productId;
         string productName;
@@ -18,13 +18,37 @@ namespace Interfaces
             productName = "Pen";
             productPrice = 567.0f;
         }
-        public void print() 
+        public void Print()
         {
+            Console.WriteLine("Product Details: ");
             Console.WriteLine($"Product Name: {productName}, Product Id: {productId}, Product Price: {productPrice}");
         }
     }
 
-    public class Student 
+    public class Student : IPrintable
     {
+        int rollNo;
+        string name;
+        string branch;
+        public Student()
+        {
+            rollNo = 11;
+            name = "Himanshu";
+            branch = "Electrical";
+        }
+        public void Print()
+        {
+            Console.WriteLine("Student Details: ");
+            Console.WriteLine($"Student RollNo: {rollNo}, Student Name {name}, Student branch {branch}");
+        }
+
+        
+    }
+    public class Xerox : IPrintable
+    {
+        public void Print()
+        {
+            Console.WriteLine("Printing");
+        }
     }
 }
