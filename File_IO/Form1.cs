@@ -21,11 +21,11 @@ namespace File_IO
         {
             string path = @"D:\TestDemo"; // giving path
             DirectoryInfo dir = new DirectoryInfo(path);//directory info obj // passing path
-            if (dir.Exists) { MessageBox.Show("Folder already exist");}
+            if (dir.Exists) { MessageBox.Show("Folder already exist");}//if folder already exist
             else 
             {
                 dir.Create();
-                MessageBox.Show("New folder created");
+                MessageBox.Show("New folder created");// to create new folder
             }
 
 
@@ -45,8 +45,8 @@ namespace File_IO
         {
             string path = @"D:\TestDemo\Test.txt";
             FileInfo fi = new FileInfo(path);
-            if (fi.Exists) { MessageBox.Show("File already exist");}
-            else { fi.Create(); MessageBox.Show("New File Created");}
+            if (fi.Exists) { MessageBox.Show("File already exist");} // if file already exist
+            else { fi.Create(); MessageBox.Show("New File Created");}// to create new file
             //string path = @"D:\Test\Testdemo.txt";
             //if (File.Exists(path)) 
             //{
