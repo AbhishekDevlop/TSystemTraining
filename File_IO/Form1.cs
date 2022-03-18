@@ -19,30 +19,44 @@ namespace File_IO
 
         private void btnCreateFolder_Click(object sender, EventArgs e)
         {
-            string path = @"D:\Test";
-            if (Directory.Exists(path)) 
+            string path = @"D:\TestDemo"; // giving path
+            DirectoryInfo dir = new DirectoryInfo(path);//directory info obj // passing path
+            if (dir.Exists) { MessageBox.Show("Folder already exist");}
+            else 
             {
-                MessageBox.Show("File Already Exist");
+                dir.Create();
+                MessageBox.Show("New folder created");
             }
-            else
-            {
-                Directory.CreateDirectory(path);
-                MessageBox.Show("File Created");
-            }
+
+
+            //string path = @"D:\Test";
+            //if (Directory.Exists(path)) 
+            //{
+            //    MessageBox.Show("Folder Already Exist");
+            //}
+            //else
+            //{
+            //    Directory.CreateDirectory(path);
+            //    MessageBox.Show("Folder Created");
+            //}
         }
 
         private void bntCreateFile_Click(object sender, EventArgs e)
         {
-            string path = @"D:\Test\Testdemo.txt";
-            if (File.Exists(path)) 
-            {
-                MessageBox.Show("File Already Exist");
-            }
-            else
-            {
-                File.Create(path);
-                MessageBox.Show("File Created");
-            }
+            string path = @"D:\TestDemo\Test.txt";
+            FileInfo fi = new FileInfo(path);
+            if (fi.Exists) { MessageBox.Show("File already exist");}
+            else { fi.Create(); MessageBox.Show("New File Created");}
+            //string path = @"D:\Test\Testdemo.txt";
+            //if (File.Exists(path)) 
+            //{
+            //    MessageBox.Show("File Already Exist");
+            //}
+            //else
+            //{
+            //    File.Create(path);
+            //    MessageBox.Show("File Created");
+            //}
         }
         FileStream fs;
         BinaryWriter bw;
