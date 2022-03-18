@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace Delegate_and_Event
 {
-    internal class Program
+    public delegate void DisplayMsg(); //hold method reference of failmsg anf passmsg
+    public delegate void ErrorDelegate();
+    public class Program
     {
+        static void ErrorMsg()
+        {
+            Console.WriteLine("You are not Eligible for Vote.");
+        }
+
+        static void FailMsg()
+        {
+            Console.WriteLine("You are Fail");
+        }
+        static void PassMsg()
+        {
+            Console.WriteLine("Congragulation you are pass");
+        }
         static void Main(string[] args)
         {
             Calculation cal = new Calculation();
@@ -58,6 +73,38 @@ namespace Delegate_and_Event
                 Console.WriteLine(item.DynamicInvoke("Abhishek"));
 
             }
+
+            Console.WriteLine("===========Event==========");
+            //event 
+
+            User user = new User();
+            user.AgeEvent += new ErrorDelegate(ErrorMsg);
+            int age = user.AcceptAge(12);
+            Console.WriteLine($"Candidate age is {age} yrs.");
+
+
+            //Result Event 
+
+            Result rsult = new Result();
+            rsult.PassEvent += new DisplayMsg(PassMsg);
+            rsult.FailEvent += new DisplayMsg(FailMsg);
+            rsult.AccepMark(35);
+            Console.WriteLine("==========================================");
+
+            //Bank Event 
+            Massage msg = new Massage();
+            Bank b = new Bank();
+            b.LowBalance += new BalanceDelegate(Massage.LowBalance);
+            b.ZeroBal += new BalanceDelegate(Massage.ZeroBalance);
+            b.InsufficentBal += new BalanceDelegate(Massage.NotSuffientBal);
+            float bal = (float)b.withdraw(5000);
+            Console.WriteLine("Your Current balance is " + bal);
+            bal = (float)b.withdraw(3000);
+            Console.WriteLine("Your Current balance is " + bal);
+            bal = (float)b.withdraw(2000);
+            Console.WriteLine("Your Current balance is " + bal);
+            bal = (float)b.withdraw(100);
+            Console.WriteLine("Your Current balance is " + bal);
         }
     }
 }
