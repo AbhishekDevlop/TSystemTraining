@@ -19,7 +19,7 @@ namespace File_IO
 
         private void btnCreateFolder_Click(object sender, EventArgs e)
         {
-            string path = @"D:\TestDemo"; // giving path
+            string path = @"D:\TestDemo"; // giving path 
             DirectoryInfo dir = new DirectoryInfo(path);//directory info obj // passing path
             if (dir.Exists) { MessageBox.Show("Folder already exist");}//if folder already exist
             else 
