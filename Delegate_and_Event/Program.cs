@@ -97,14 +97,27 @@ namespace Delegate_and_Event
             b.LowBalance += new BalanceDelegate(Massage.LowBalance);
             b.ZeroBal += new BalanceDelegate(Massage.ZeroBalance);
             b.InsufficentBal += new BalanceDelegate(Massage.NotSuffientBal);
-            float bal = (float)b.withdraw(5000);
-            Console.WriteLine("Your Current balance is " + bal);
-            bal = (float)b.withdraw(3000);
-            Console.WriteLine("Your Current balance is " + bal);
-            bal = (float)b.withdraw(2000);
-            Console.WriteLine("Your Current balance is " + bal);
-            bal = (float)b.withdraw(100);
-            Console.WriteLine("Your Current balance is " + bal);
+            //float bal = (float)b.withdraw(5000);
+            //Console.WriteLine("Your Current balance is " + bal);
+            //bal = (float)b.withdraw(3000);
+            //Console.WriteLine("Your Current balance is " + bal);
+            //bal = (float)b.withdraw(2000);
+            //Console.WriteLine("Your Current balance is " + bal);
+            //bal = (float)b.withdraw(100);
+            //Console.WriteLine("Your Current balance is " + bal);
+
+            string s1,s2 = "yes";
+            float bal;
+            do
+            {
+                Console.WriteLine("Enter a amount ");
+                float amount = Convert.ToSingle(Console.ReadLine());
+                bal = (float)b.withdraw(amount);
+                Console.WriteLine("Your current balance is " + bal);
+                Console.WriteLine("Do you want to withdraw money again");
+                s1 = Console.ReadLine();
+            } while (s1 == s2);
+            Console.WriteLine("Thank you For Banking Please visit Again");
         }
     }
 }

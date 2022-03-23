@@ -18,6 +18,7 @@ namespace Interfaces
             productName = "Pen";
             productPrice = 567.0f;
         }
+        
         public void Print()
         {
             Console.WriteLine("Product Details: ");
