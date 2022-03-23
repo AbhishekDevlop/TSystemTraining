@@ -52,6 +52,7 @@
             this.btnBinaryWrite.TabIndex = 0;
             this.btnBinaryWrite.Text = "Binary Write";
             this.btnBinaryWrite.UseVisualStyleBackColor = true;
+            this.btnBinaryWrite.Click += new System.EventHandler(this.btnBinaryWrite_Click);
             // 
             // btnBinaryRead
             // 
@@ -61,6 +62,7 @@
             this.btnBinaryRead.TabIndex = 1;
             this.btnBinaryRead.Text = "Binary Read";
             this.btnBinaryRead.UseVisualStyleBackColor = true;
+            this.btnBinaryRead.Click += new System.EventHandler(this.btnBinaryRead_Click);
             // 
             // btnXmlWrite
             // 
@@ -90,6 +92,7 @@
             this.btnSoapWrite.TabIndex = 4;
             this.btnSoapWrite.Text = "SOAP Write";
             this.btnSoapWrite.UseVisualStyleBackColor = true;
+            this.btnSoapWrite.Click += new System.EventHandler(this.btnSoapWrite_Click);
             // 
             // btnSoapRead
             // 
@@ -99,6 +102,7 @@
             this.btnSoapRead.TabIndex = 5;
             this.btnSoapRead.Text = "SOAP Read";
             this.btnSoapRead.UseVisualStyleBackColor = true;
+            this.btnSoapRead.Click += new System.EventHandler(this.btnSoapRead_Click);
             // 
             // btnJsonWrite
             // 
