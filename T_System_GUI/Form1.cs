@@ -12,6 +12,7 @@ namespace T_System_GUI
         public Form1()
         {
             InitializeComponent();
+           //to establish the connection user interface 
             con = new SqlConnection(@"Server = DESKTOP-INLRLPK\SQLEXPRESS;DataBase = T_System_Training;Integrated Security = True");
         }
         public void Clear() 
