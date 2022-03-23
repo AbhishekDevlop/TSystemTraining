@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Win_Form_App
 {
@@ -19,7 +13,7 @@ namespace Win_Form_App
 
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //string s = richTextBox1.Text;
+            
             richTextBox1.Cut();
         }
 
@@ -30,13 +24,61 @@ namespace Win_Form_App
 
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // string s = richTextBox1.Text;
+           
             richTextBox1.Copy();
         }
 
         private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox1.Paste();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                SaveFileDialog sd = new SaveFileDialog(); 
+                sd.FileName = ".txt";
+                sd.DefaultExt = ".txt";
+                sd.Filter = "Text File|*.txt";
+                DialogResult dr = sd.ShowDialog();
+                if(dr == DialogResult.OK)  
+                {
+                    StreamWriter sw = new StreamWriter(sd.FileName);   //use of st
+                    sw.WriteLine(richTextBox1.Text);
+                    sw.Close();
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog od = new OpenFileDialog();
+                od.Filter = "Text File|*.txt|All File|*.*";
+                DialogResult result = od.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    StreamReader sr = new StreamReader(od.OpenFile());
+                    richTextBox1.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);;
+            }
+
         }
     }
 }
